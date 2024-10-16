@@ -1,0 +1,151 @@
+/* Body Styles */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #ff00ff; /* Bright magenta background */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+/* Header Flexbox */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh; /* Reduced height for header */
+  background: linear-gradient(45deg, #ff00ff, #00ffff); /* Gradient background */
+  animation: gradientBG 15s ease infinite; /* Animated background */
+  padding: 20px;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Title Styles */
+h1 {
+  font-size: 6em; /* Even larger font size */
+  font-weight: 900; /* Extra bold */
+  color: #ffff00; /* Bright yellow */
+  text-shadow: 3px 3px 0 #ff0000, -3px -3px 0 #0000ff; /* Red and blue shadow for 3D effect */
+  letter-spacing: 2px;
+  margin: 0;
+  position: relative;
+  animation: pulse 1s infinite alternate; /* Pulsing animation */
+  text-align: center; /* Center the text */
+}
+
+@keyframes pulse {
+  from { transform: scale(1); }
+  to { transform: scale(1.1); }
+}
+
+/* Sparkle Effect on Title */
+h1.animated-title::before {
+  content: '🔥'; /* Fire emoji */
+  position: absolute;
+  top: -0.5em;
+  left: -0.5em;
+  font-size: 0.5em;
+  animation: rotate 2s linear infinite; /* Rotating fire emoji */
+}
+
+h1.animated-title::after {
+  content: '💥'; /* Explosion emoji */
+  position: absolute;
+  bottom: -0.5em;
+  right: -0.5em;
+  font-size: 0.5em;
+  animation: shake 0.5s infinite; /* Shaking explosion emoji */
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  50% { transform: translate(-1px, -2px) rotate(-1deg); }
+  100% { transform: translate(1px, 1px) rotate(0deg); }
+}
+
+/* Container styles */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+  min-height: 70vh; /* Ensure it takes up the rest of the viewport */
+}
+
+/* Card Styles */
+.card {
+  background: linear-gradient(135deg, #ff00ff, #00ffff); /* Gradient background */
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3); /* Glowing effect */
+  margin: 20px;
+  padding: 30px;
+  text-align: center;
+  width: 350px;
+  transform: rotate(-5deg); /* Slight tilt */
+  transition: all 0.5s ease;
+}
+
+.card:hover {
+  transform: rotate(0deg) scale(1.1); /* Straighten and enlarge on hover */
+  box-shadow: 0 15px 50px rgba(255, 255, 255, 0.5); /* Intensify glow on hover */
+}
+
+.card img {
+  width: 100%;
+  border-radius: 15px;
+  transform: scale(1.1); /* Slightly larger image */
+  transition: transform 0.3s ease;
+}
+
+.card:hover img {
+  transform: scale(1.2); /* Even larger image on hover */
+}
+
+.price {
+  font-weight: 900;
+  font-size: 2em;
+  margin: 20px 0;
+  color: #ffff00; /* Bright yellow */
+  text-shadow: 2px 2px 0 #ff0000; /* Red shadow */
+}
+
+.buy-btn {
+  background-color: #ff0000; /* Bright red */
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1.3em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: 0 5px 15px rgba(255, 0, 0, 0.4);
+}
+
+.buy-btn:hover {
+  background-color: #ffff00; /* Bright yellow on hover */
+  color: #ff0000; /* Red text on hover */
+  transform: scale(1.1) rotate(5deg); /* Enlarge and rotate slightly on hover */
+  box-shadow: 0 8px 25px rgba(255, 255, 0, 0.6);
+}
+
+/* Add a flashing effect to the button */
+@keyframes flash {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.buy-btn {
+  animation: flash 1s linear infinite;
+}

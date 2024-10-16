@@ -1,0 +1,15 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="10" y="10" width="180" height="180" fill="#fff7ed" rx="20"/>
+  
+  <!-- Graph Lines -->
+  <path d="M 40 160 L 40 40 M 40 160 L 160 160" stroke="#fb923c" stroke-width="4"/>
+  
+  <!-- Time Series Line -->
+  <path d="M 40 120 Q 80 40 120 140 T 160 60" fill="none" stroke="#ea580c" stroke-width="4"/>
+  
+  <!-- Data Points -->
+  <circle cx="60" cy="100" r="6" fill="#9a3412"/>
+  <circle cx="100" cy="120" r="6" fill="#9a3412"/>
+  <circle cx="140" cy="80" r="6" fill="#9a3412"/>
+</svg>

@@ -1,0 +1,22 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="10" y="10" width="180" height="180" fill="#fdf4ff" rx="20"/>
+  
+  <!-- Cluster Groups -->
+  <circle cx="60" cy="60" r="8" fill="#d946ef"/>
+  <circle cx="70" cy="70" r="8" fill="#d946ef"/>
+  <circle cx="55" cy="75" r="8" fill="#d946ef"/>
+  
+  <circle cx="140" cy="60" r="8" fill="#86198f"/>
+  <circle cx="150" cy="70" r="8" fill="#86198f"/>
+  <circle cx="135" cy="75" r="8" fill="#86198f"/>
+  
+  <circle cx="100" cy="140" r="8" fill="#701a75"/>
+  <circle cx="110" cy="150" r="8" fill="#701a75"/>
+  <circle cx="95" cy="155" r="8" fill="#701a75"/>
+  
+  <!-- Connecting Lines -->
+  <path d="M 60,60 Q 100,100 140,60" stroke="#fae8ff" stroke-width="2"/>
+  <path d="M 60,60 Q 80,100 100,140" stroke="#fae8ff" stroke-width="2"/>
+  <path d="M 140,60 Q 120,100 100,140" stroke="#fae8ff" stroke-width="2"/>
+</svg>

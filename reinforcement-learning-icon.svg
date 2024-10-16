@@ -1,0 +1,15 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="10" y="10" width="180" height="180" fill="#ecfeff" rx="20"/>
+  
+  <!-- Reward Star -->
+  <path d="M 100,40 L 115,85 L 160,85 L 125,115 L 140,160 L 100,130 L 60,160 L 75,115 L 40,85 L 85,85 Z" 
+        fill="none" stroke="#06b6d4" stroke-width="3"/>
+  
+  <!-- Circular Path -->
+  <path d="M 60,100 A 40,40 0 1,1 140,100" 
+        fill="none" stroke="#0891b2" stroke-width="4" stroke-dasharray="8,4"/>
+  
+  <!-- Agent -->
+  <circle cx="100" cy="100" r="15" fill="#0e7490"/>
+</svg>
