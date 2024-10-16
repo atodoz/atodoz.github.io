@@ -149,3 +149,53 @@ h1.animated-title::after {
 .buy-btn {
   animation: flash 1s linear infinite;
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 4em; /* Smaller font size for mobile */
+  }
+  
+  .header {
+    height: 40vh; /* Adjust header height for mobile */
+    padding: 10px; /* Less padding */
+  }
+
+  .container {
+    padding: 10px; /* Less padding */
+  }
+
+  .card {
+    width: 90%; /* Full width cards on mobile */
+    margin: 10px 0; /* Adjust margins */
+    padding: 20px; /* Less padding */
+  }
+
+  .price {
+    font-size: 1.5em; /* Smaller price font size */
+  }
+
+  .buy-btn {
+    font-size: 1em; /* Smaller button font size */
+    padding: 10px 20px; /* Less padding */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 3em; /* Even smaller font size for very small screens */
+  }
+
+  .header {
+    height: 50vh; /* Further adjust header height */
+  }
+
+  .card {
+    padding: 15px; /* Less padding */
+  }
+
+  .buy-btn {
+    font-size: 0.9em; /* Smaller button font size */
+    padding: 8px 16px; /* Less padding */
+  }
+}
