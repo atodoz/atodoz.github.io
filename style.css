@@ -151,9 +151,11 @@ h1.animated-title::after {
 }
 
 /* Responsive Styles */
+/* Responsive Styles */
 @media (max-width: 768px) {
   h1 {
     font-size: 4em; /* Smaller font size for mobile */
+    white-space: nowrap; /* Prevent line break */
   }
   
   .header {
@@ -184,6 +186,7 @@ h1.animated-title::after {
 @media (max-width: 480px) {
   h1 {
     font-size: 3em; /* Even smaller font size for very small screens */
+    white-space: nowrap; /* Prevent line break */
   }
 
   .header {
@@ -199,3 +202,4 @@ h1.animated-title::after {
     padding: 8px 16px; /* Less padding */
   }
 }
+
